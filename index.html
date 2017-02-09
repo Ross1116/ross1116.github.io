@@ -1,26 +1,74 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
-<!--Menu style starts-->
-<style>
-ul{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#333333;position:fixed;width:100%;}
-li{float:left;}
-li a{display: block;color: white;text-align: center;padding: 16px;padding-left:50px;padding-right:50px;text-decoration: none;}
-li a:hover{background-color:#111111;}
-<!--Menu style ends-->
-</style>
-<body style="background-color:#404040;color:white;margin:0;padding:0;">
-<!--top border yellow-->
-<div style="background-color:rgb(253,206,42);padding:0px;width:100%;">
-<a href="#home">
-<img src="https://pbs.twimg.com/profile_images/621737972799401984/Dp_z9yDp.jpg"  style="display:block;margin-left:auto;margin-right:auto;padding:0;width:256px;height:80px;">
-</a>
-</div>
-<!--top border yellow-->
-<!--Menu body starts-->
-<ul><li><a href="#home">Home</a></li>
-<li><a href="#news">News</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><a href="#about">About</a></li>
-</ul><!--Menu body ends-->
-</body>
+<head> 
+<!--Import Google Icon Font-->      
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">      
+  <!--Import materialize.css-->      
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>      
+  <!--Let browser know website is optimized for mobile-->      
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
+  </head>
+  <!--Menu style starts-->
+  <style>
+    .container {  display: flex;}.container >
+   div {  flex: 1; /*grow*/}
+    ul{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#333333;border:1px solid black;width:100%;}
+    li{float:left;}
+    li a{display: block;color: white;text-align: center;padding: 16px;padding-left:50px;padding-right:50px;text-decoration: none;}
+    li a:hover{background-color:#111111;}
+    <!--Menu style ends-->
+  </style>
+  <body style="background-color:#404040;color:white;margin:0;padding:0;">
+  <!--top border yellow-->
+  <div style="background-color:rgb(253,206,42);padding:0px;width:100%;">
+  <a href="#home">
+  <img src="https://pbs.twimg.com/profile_images/621737972799401984/Dp_z9yDp.jpg"  style="display:block;margin-left:auto;margin-right:auto;padding:0;width:256px;height:128px;">
+    </a>
+    </div> 
+    <!--top border yellow-->
+    <!--Menu body starts-->
+    <ul>
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#news">News</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li><li><a href="#about">About</a>
+      </li>
+    </ul>
+    <h1 style="padding-top:0px;text-align:center;color:rgb(253,206,42);">VGL Riviera '17</h1>
+    <h4 style="text-align:center;">Games</h4>
+    <div class="container">
+      <!--CoD4 div starts-->
+      <div style="background-color:white;border:2px solid black;width:200px;height:550px;margin-left:0px;margin-top:8px;float:left;display:inline-block;">
+        <a href="#cod4" style="text-decoration:none">
+          <img src="https://i.ytimg.com/vi/eMubLKarVas/maxresdefault.jpg" alt="COD4 Promod" style="width:300px;height:429px;border-bottom:1px solid black">
+          <p style="color:black;text-align:center;">CoD4 Modern Warfare Tournament</p>
+        </a>
+        <a href="#cod4_info" class="waves-effect waves-light btn" style="margin-left:15px;">Click here to know more</a>
+      </div>
+      <!--CoD4 div ends-->
+      <!--CSGO div starts-->
+      <div style="background-color:white;border:2px solid black;width:100px;height:550px;margin-left:20px;margin-top:8px;float:left;display:inline-block;">
+        <a href="#csgo" style="text-decoration:none">
+          <img src="https://i.ytimg.com/vi/dWRqO8eEsmE/maxresdefault.jpg" alt="COD4 Promod" style="width:300px;height:429px;border-bottom:1px solid black">
+          <p style="color:black;text-align:center;">Counter Strike: Global Offensive</p>
+        </a>
+        <a href="#csgo_info" class="waves-effect waves-light btn" style="margin-left:15px;">Click here to know more</a>
+      </div>
+      <!--CSGO div ends-->
+      <!--Dota 2 div starts-->
+      <div class="cols s3"style="background-color:white;border:2px solid black;width:200px;height:550px;margin-top:8px;margin-left:20px;float:left;display:inline-block;">
+        <a href="#dota2" style="text-decoration:none">
+          <img src="http://s2.dmcdn.net/JPeZD/1280x720-AgD.jpg" alt="Dota 2" style="width:300px;height:429px;border-bottom:1px solid black">
+          <p style="color:black;text-align:center;">Dota 2</p></a>
+        <a href="#dota2_info" class="waves-effect waves-light btn" style="margin-left:16px;">Click here to know more</a>
+      </div>
+      <!--Dota 2 div ends-->
+      <br style="clear: left;" />
+    </div> 
+  </body> 
 </html>
