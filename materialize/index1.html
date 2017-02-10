@@ -1,6 +1,6 @@
- <!DOCTYPE html>
- <html>
- <head>
+<!DOCTYPE html>
+  <html>
+    <head>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -8,11 +8,8 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	  <!-- Social Media Icons -->
- <link rel="stylesheet" href="css/style.css">
     </head>
-<!--Menu style starts-->
-<style>
+	<style>
 .container {
   display: flex;
 }
@@ -45,20 +42,15 @@ display:block}
 <!--Menu style ends-->
 </style>
 
-<body id="home" style="background-color:#404040;color:white;margin:0;padding:0;">
-<!--Import jQuery before materialize.js-->
+    <body id="home" style="background-color:#404040;color:white;margin:0;padding:0;text-decoration:none">
+      <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-<script>
- $(document).ready(function(){
+	  <script>  $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('#modal1').modal();
   });
-  $(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('#modal2').modal();
-  });
-</script>
+       </script>
 <!--top border yellow start--> 
 <div style="background-color:rgb(253,206,42);padding:0px;width:100%;">
 <a href="#home">
@@ -85,34 +77,26 @@ display:block}
 <img class="responsive-img" src="https://i.ytimg.com/vi/eMubLKarVas/maxresdefault.jpg" alt="COD4 Promod" style="height:429px;border-bottom:1px solid black">
 <p style="color:black;text-align:center;">CoD4: Modern Warfare</p>
 </a><!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn" data-target="modal1" href="#codmodal" style="margin-left:10px">Click here to know more</a>
+  <a class="waves-effect waves-light btn" data-target="modal1" href="#codmodal">Click here to know more</a>
   <!-- Modal Structure -->
-  <div id="modal1" class="modal" style="background-color:#404040;color:white">
+  <div id="modal1" class="modal">
     <div class="modal-content">
-      <h4 style="color:rgb(253,206,42)">CoD4: Modern Warfare</h4>
-      <img src="https://gifyu.com/images/COD4VGL-iloveimg-compressed.gif" style="width:100%;height:400px">
-	  <p>A 5v5 team based game playing competetively to win the grand prize of cash money upto 20k<br>Game-mode: SnD (Search and Destroy)<br>Mod used: Promod (pml220)</p>
-	  <button style="text-align:center" data-target="modal11" class="btn">Click here to register</button>
-     </div>
+      <h4>CoD4: Modern Warfare</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
   </div>
+</div>
 <!--CoD4 div ends-->
 <!--CSGO div starts-->
 <div style="background-color:white;border:2px solid black;width:300px;height:550px;margin-left:125px;margin-top:8px;float:left;display:inline-block;">
 <a href="#csgo" style="text-decoration:none">
 <img class="responsive-img" src="https://i.ytimg.com/vi/dWRqO8eEsmE/maxresdefault.jpg" alt="CSGO" style="height:429px;border-bottom:1px solid black">
 <p style="color:black;text-align:center;">Counter Strike: Global Offensive</p>
-</a><!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn" data-target="modal2" href="#csgomodal" style="margin-left:10px">Click here to know more</a>
-  <!-- Modal Structure -->
-  <div id="modal2" class="modal" style="background-color:#404040;color:white">
-    <div class="modal-content">
-      <h4 style="color:rgb(253,206,42)">Counter Strike: Global Offensive</h4>
-      <img src="https://gifyu.com/images/CSGOVGL-compressed.gif" style="width:100%;height:400px">
-	  <p class="flow-text">A 5v5 team based game playing competetively to win the grand prize of cash money upto 20k<br>Game-mode: Competetive</p>
-	  <button style="text-align:center" data-target="modal11" class="btn">Click here to register</button>
-     </div>
-    </div>
+</a>
+<a href="#csgo_info" class="waves-effect waves-light btn" style="margin-left:10px;">Click here to know more</a>
 </div>
 <!--CSGO div ends-->
 <!--Dota 2 div starts-->
@@ -160,3 +144,4 @@ display:block}
 </div>
  </body>
  </html>
+        
