@@ -8,6 +8,8 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <!-- Social Media Icons -->
+ <link rel="stylesheet" href="css/style.css">
     </head>
 <!--Menu style starts-->
 <style>
@@ -17,7 +19,7 @@
 .container > div {
   flex: 1; /*grow*/
 }
-ul{
+.menul{
 list-style-type:none;
 margin:0;
 padding:0;
@@ -28,7 +30,7 @@ width:100%;}
 li{
 float:left;
 }
-li a{
+.li-a{
 display: block;
 color: white;
 text-align: center;
@@ -37,10 +39,10 @@ padding-left:50px;
 padding-right:50px;
 text-decoration: none;
 }
-li a:hover{
-background-color:#111111;}
+.li-a:hover{
+background-color:#111111;
+display:block}
 <!--Menu style ends-->
-\
 </style>
 <body id="home" style="background-color:#404040;color:white;margin:0;padding:0;">
 <!--top border yellow start--> 
@@ -51,11 +53,14 @@ background-color:#111111;}
 </div> 
 <!--top border yellow ends-->
 <!--Menu body starts-->
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#news">News</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><a href="#about">About</a></li>
+<ul class="menul">
+<li class="li-a"><a href="#home">Home</a></li>
+<li class="li-a"><a href="#news">News</a></li>
+<li class="li-a"><a href="#contact">Contact</a></li>
+<li class="li-a"><a href="#about">About</a></li>
+<li style="float:right;display: block;padding:8px;"><a href="https://www.youtube.com/user/TAGclub2012" class="social-icon"  target="_blank"> <i class="fa fa-youtube"></i></a></li>
+<li style="float:right;display: block;padding:8px;"><a href="https://twitter.com/TagVit" class="social-icon"  target="_blank"> <i class="fa fa-twitter"></i></a></li>
+<li style="float:right;display: block;padding:8px;"><a href="https://www.facebook.com/tagvitu" class="social-icon"  target="_blank"> <i class="fa fa-facebook"></i></a></li>
 </ul>
 <h1 style="padding-top:0px;text-align:center;color:rgb(253,206,42);">VGL Riviera '17</h1>    
 <h4 style="text-align:center;">Games</h4>
@@ -66,7 +71,7 @@ background-color:#111111;}
 <img class="responsive-img" src="https://i.ytimg.com/vi/eMubLKarVas/maxresdefault.jpg" alt="COD4 Promod" style="height:429px;border-bottom:1px solid black">
 <p style="color:black;text-align:center;">CoD4: Modern Warfare</p>
 </a>
-<a href="#cod4_info" class="waves-effect waves-light btn" style="margin-left:15px;">Click here to know more</a>
+<a href="#cod4_info" class="waves-effect waves-light btn" style="margin-left:10px;">Click here to know more</a>
 </div>
 <!--CoD4 div ends-->
 <!--CSGO div starts-->
@@ -75,7 +80,7 @@ background-color:#111111;}
 <img class="responsive-img" src="https://i.ytimg.com/vi/dWRqO8eEsmE/maxresdefault.jpg" alt="CSGO" style="height:429px;border-bottom:1px solid black">
 <p style="color:black;text-align:center;">Counter Strike: Global Offensive</p>
 </a>
-<a href="#csgo_info" class="waves-effect waves-light btn" style="margin-left:15px;">Click here to know more</a>
+<a href="#csgo_info" class="waves-effect waves-light btn" style="margin-left:10px;">Click here to know more</a>
 </div>
 <!--CSGO div ends-->
 <!--Dota 2 div starts-->
@@ -84,7 +89,7 @@ background-color:#111111;}
 <img class="responsive-img" src="http://s2.dmcdn.net/JPeZD/1280x720-AgD.jpg" alt="Dota 2" style="height:429px;border-bottom:1px solid black">
 <p style="color:black;text-align:center;">Dota 2</p>
 </a>
-<a href="#dota2_info" class="waves-effect waves-light btn" style="margin-left:16px;">Click here to know more</a>
+<a href="#dota2_info" class="waves-effect waves-light btn" style="margin-left:10px;">Click here to know more</a>
 </div>
 <!--Dota 2 div ends-->
 <br style="clear: left;" />
@@ -96,7 +101,7 @@ background-color:#111111;}
 <img class="responsive-img" src="http://static4.gamespot.com/uploads/original/1365/13658182/2559554-mortalkombatx_dvorah_subzero_cove_stab.jpg" alt="Mortal Combat X" style="height:429px;border-bottom:1px solid black">
 <p style="color:black;text-align:center;">Mortal Combat X</p>
 </a>
-<a href="#mortalcombat_info" class="waves-effect waves-light btn" style="margin-left:16px;">Click here to know more</a>
+<a href="#mortalcombat_info" class="waves-effect waves-light btn" style="margin-left:10px;">Click here to know more</a>
 </div>
 <!--Mortal Combat end-->
 <!--Fifa start-->
@@ -105,7 +110,7 @@ background-color:#111111;}
 <img class="responsive-img" src="https://www.ultimateteam.co.uk/wp-content/uploads/2016/06/FIFA-17-Release-Date-James-Rodriguez-New-Cover-Star-e1465127847782.jpg" alt="Fifa" style="height:429px;border-bottom:1px solid black">
 <p style="color:black;text-align:center;">Fifa 17</p>
 </a>
-<a href="#fifa_info" class="waves-effect waves-light btn" style="margin-left:16px;">Click here to know more</a>
+<a href="#fifa_info" class="waves-effect waves-light btn" style="margin-left:10px;">Click here to know more</a>
 </div>
 <!--Fifa end-->
 <!--Blur start-->
@@ -114,12 +119,13 @@ background-color:#111111;}
 <img class="responsive-img" src="https://robertkmaxwell.files.wordpress.com/2012/02/4791022143_d038a79cbb.jpg" alt="Blur" style="height:429px;border-bottom:1px solid black">
 <p style="color:black;text-align:center;">Blur</p>
 </a>
-<a href="#blur_info" class="waves-effect waves-light btn" style="margin-left:16px;">Click here to know more</a>
+<a href="#blur_info" class="waves-effect waves-light btn" style="margin-left:10px;">Click here to know more</a>
 </div>
 <!--Blur end-->
 </div>
-<div style="background-color:#333333;width:100%;height:30px;border-top:1px solid black;bottom:0;position:fixed;">
-<a href="https://www.facebook.com/tagvitu" style="float:right;text-decoration:none;color:white" target="_blank">&copy 2017 Copyright: Technology And Gaming (T.A.G)</a>
+<div style="background-color: #333333;width:100%;height:30px;border-top:1px solid black;bottom:0;position:fixed;z-index:1;margin-bottom:12" class="footer-social-icons"><ul class="social-icons">  
+<p style="text-align:right;text-decoration:none;color:white;">&copy 2017 Copyright: Technology And Gaming (T.A.G)</p>
 </div>
+<iframe class="materialbox-overlay"><iframe>
  </body>
  </html>
