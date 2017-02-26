@@ -6,13 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-default" data-offset="85">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 
+<header>
+	<div class="navbar navbar-default">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle btn-warning" data-toggle="collapse" data-target="#navbarcollapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse nav-pills nav-stacked" data-spy="affix" data-offset-top="590" id="navbarcollapse">
+				<ul class="nav navbar-nav">
+					<li class=""><a href="#profile">Profile</a></li>
+					<li class=""><a href="#experiences">Experiences</a></li>
+					<li class=""><a href="#abilities">Abilities</a></li>
+					<li class=""><a href="#contact">Contact</a></li>
+				</ul>
+		</div>
+	</div>
+</header>
 
 <div>
 	<img class="img abs" src="images/background1.jpg">
@@ -24,29 +44,11 @@
 	</div>
 <div>
 
-<div class="navbar-header">
-	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-		<span class="sr-only">Toggle navigation</span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	</button>
-</div>
-
-<div class="collapse navbar-collapse navbar-ex1-collapse">
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="#profile">Profile</a></li>
-			<li class=""><a href="#experiences">Experiences</a></li>
-			<li class=""><a href="#abilities">Abilities</a></li>
-			<li class=""><a href="#contact">Contact</a></li>
-		</ul>
-</div>
-
 <div class="background-grey">
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<div class="center marg">
-				<h2 style="margin-bottom:20px">Profile</h2>
+				<h2 style="margin-bottom:20px" id="profile">Profile</h2>
 				<p class="par1" style="margin-top:20px margin-bottom:80px">Aspiring to be a game-developer, web-developer</p>
 				<hr>				
 			</div>	
@@ -55,7 +57,7 @@
 	<div class="row" style="margin-top:20px">
 		<div class="col-md-2 col-xs-12 col-md-offset-3" style="margin-top:20px margin-bottom:20px;">
 			<h3 class="center">About me</h3>
-			<p class="par3">i havent decided the content yet :|</p>
+			<p class="par2">Currently studying B.Tech CSE department in VIT. I am the kind of person who puts all his effort towards doing something if that something catches his interest.</p>
 		</div>
 		<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-0" style="margin-top:20px margin-bottom:80px">
 			<image src="images/background.jpg" class="img-circle img-responsive">
@@ -65,12 +67,12 @@
 			<p class="par2"><b>Name:</b><br/>R.Roshan<br/><b>Age:</b><br/>18 years<br/><b>From:</b><br/>Chennai,Tamilnadu,India,Earth</p>
 		</div>
 	</div>
-</div>
+</div>	
 
 <div class="background-gray">
 	<div class="row">
 		<div class="col-sm-6 col-sm-offset-3">
-			<h2 class="center">Experiences</h2>
+			<h2 class="center" id="experiences">Experiences</h2>
 			<hr>
 		</div>
 	</div>
@@ -130,7 +132,7 @@
 <div class="background-grey" style="margin-bottom:40px">
 	<div class="row">
 		<div class="col-sm-6 col-sm-offset-3">
-			<h2 class="center">Abilities</h2>
+			<h2 class="center" id="abilities">Abilities</h2>
 			<hr>
 			<h3>Skills</h3>
 		</div>
@@ -225,7 +227,7 @@
 					<span class="glyphicon glyphicon-star"></span>
 					<span class="glyphicon glyphicon-star"></span>
 					<span class="glyphicon glyphicon-star"></span>
-					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star-empty"></span>
 					<span class="glyphicon glyphicon-star-empty"></span>
 					</span>
 				</li>
@@ -260,6 +262,64 @@
 							<span class="glyphicon glyphicon-star"></span>
 							<span class="glyphicon glyphicon-star"></span>
 							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+						</span>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<hr style="margin-top:20px">
+			<h3>Tools</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-offset-3 col-sm-3">
+			<ul class="no-bullets">
+				<li>
+					<span class="ability-title">Unity</span>
+					<span class="ability-score">
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star-empty"></span>
+					<span class="glyphicon glyphicon-star-empty"></span>
+					</span>
+				</li>
+				<li>
+					<span class="ability-title">Photoshop</span>
+					<span class="ability-score">
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star-empty"></span>
+					<span class="glyphicon glyphicon-star-empty"></span>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<div class="col-sm-3">
+			<ul class="no-bullets">
+				<li style="padding-top=0">
+					<span class="ability-title">Maya(animation)</span>
+					<span class="ability-score">
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star-empty"></span>
+					<span class="glyphicon glyphicon-star-empty"></span>
+					</span>
+				</li>
+				<li>
+					<span>
+						<span class="ability-title">Vegas Pro</span>
+						<span class="ability-score">
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
 							<span class="glyphicon glyphicon-star-empty"></span>
 							<span class="glyphicon glyphicon-star-empty"></span>
 						</span>
@@ -274,13 +334,22 @@
 	<div class="background-gray">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
-				<h2 class="center">Contact</h2>
+				<h2 class="center" id="contact">Contact</h2>
 				<hr>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-3 col-md-offset-3">
 			<h3>Follow me on</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+			<a href="https://www.facebook.com/roshan.ravi.142"><i class="fa fa-facebook-square" id="fb"></i></a>
+			<a href="#"><i class="fa fa-twitter-square" style="font-size:36px" id="tw"></i></a>
+			<a href="#"><i class="fa fa-linkedin-square" style="font-size:36px" id="ln"></i></a>
+			<span><a href="mailto:r.roshan2016@vitstudent.ac.in" style="text-decoration:none"><i class="fa fa-envelope" id="#em" style="font-size:36px;"></i></a></span>
+			<span id="ph"><i class="fa fa-phone" style="font-size:16px"></i> 9791653361</span>
 			</div>
 		</div>
 	</div>
