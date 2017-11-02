@@ -1,0 +1,13 @@
+
+.a{
+    background:url("seat grey.png") no-repeat;
+    width: 180px;
+  height: 236px;
+  padding-left: 180px;
+}
+.b{
+    background-image:url("seat green.png");
+    width: 180px;
+  height: 236px;
+  padding-left: 180px;
+}
