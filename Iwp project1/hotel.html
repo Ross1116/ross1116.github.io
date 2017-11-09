@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--animation stylesheets-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!--datepicker js-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+    $( function() {
+      $( "#datepicker1" ).datepicker();
+    } );
+    </script>
+    <!--datepicker stylesheets-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <style media="screen">
+    body, html {
+        height: 100%;
+    }
+
+    .bg {
+        background-image: url("images/hotel_cover.jpeg");
+        height: 100%;/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .overlay{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.6);
+    }
+    .navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+  .navbar li { color: #000 }
+    </style>
+</head>
+
+<body style="background-color:black;color:#cccccc">
+  <!--Navbar begins-->
+    <div class="row" style="width:100vw;margin:0px">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="Main_page.html"><img src="images/logo1.png" alt="BusT logo"  style="width:64px;height:60px; "></a></li>
+            <li><a style="padding-right:30px;padding-left:30px;" href="Main_page.html">Home</a></li>
+            <li><a style="padding-right:30px;padding-left:30px;" href="#proj">About</a></li>
+            <li><a style="padding-right:30px;padding-left:30px;" href="#">Book Ticket</a></li>
+            <li><a style="padding-right:30px;padding-left:30px;" href="">Hotels</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="Signup.html" style="padding-right:30px;padding-left:30px;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="Login.html" style="paddtravel-insurance-baging-right:30px;padding-left:30px;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  <div class="bg">
+    <div class="overlay">
+      <h1 class="wow fadeInDown" style="z-index:3;text-align:center;padding-top:20%;color:#b2b2b2;font-size:4vw;margin-bottom:50px"><b>Explore five star hotels</b></h1>
+      <div class="container">
+      <div style="background-color:black;background-color: rgba(0,0,0,0.4);padding-top:20px">
+        <h3 style="padding-left:190px;padding-bottom:10px">Book hotel room</h3>
+      <div class="form-inline row" style="padding-bottom:50px">
+          <div class="form-group has-feedback col-md-offset-2 "  style="padding-left:10px">
+            <input style="background-color:transparent" type="date" class="form-control" placeholder="Check in" id="datepicker">
+            <i class="fa fa-calendar form-control-feedback" style="padding-top:10px  "aria-hidden="true"></i>
+          </div>
+          <div class="form-group has-feedback"  style="padding-left:10px">
+            <input style="background-color:transparent" type="date" class="form-control" placeholder="Check Out" id="datepicker1">
+            <i class="fa fa-calendar form-control-feedback" style="padding-top:10px  "aria-hidden="true"></i>
+          </div>
+          <div class="form-group" style="padding-left:10px">
+            <select class="form-control" style="background-color:transparent;color:#b2b2b2" id="sel1">
+              <option class="active">Adults</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <div class="form-group "  style="padding-left:10px">
+            <select class="form-control" style="background-color:transparent;color:#b2b2b2" id="sel1">
+              <option class="active">Children</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <button type="submit" style="background-color:transparent;color:#b2b2b2;margin-left:10px" class="btn btn-default">Book Now</button>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+   <div class="container-fluid"  style="background-color:#191919;padding-bottom:60px">
+    <h2 style="text-align:center;padding-top:30px;padding-bottom:10px;font-size:40px" class="wow fadeInDown">Popular Travel Destinations</h2>
+    <hr>
+    <div class="row wow slideInLeft" style="margin-top:70px;text-align:center">
+      <div class=" col-md-4  hvr-grow-shadow" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+         <img src="images/goa.jpg" class="img-rounded" style="width:450px;height:250px;margin-top:15px">
+      </div>
+      <div class="col-md-7">
+        <h2 style="text-align:left;font-size:50px">Goa</h2>
+        <p style="text-align:justify;font-size:20px">Goa is a land that redefines holidays, with its exquisite mix of sun, surf, and beaches; Goa has become the ultimate tourist destination. Goa is a tiny emeralds land with its natural scenic beauty, attractive beaches and temples, famous for its architecture, feast and festivals and hospitable people with a rich culture. So get swept away in Goa by the spectacular sunrises and sunsets and rejuvenate yourself.</p>
+      </div>
+    </div>
+    <div class="row wow slideInRight" style="margin-top:70px;text-align:center">
+      <div class="col-md-8">
+        <h2 style="text-align:right;font-size:50px">Hyderabad</h2>
+        <p style="text-align:justify;font-size:20px">Hyderabad is the capital of Telangana in Southern India, located on the banks of the Musi River and on the Deccan Plateau. Hyderabad and Secunderabad are "twin cities" near Hussain Sagar Lake (also known as Tank Bund in local parlance) but both cities have grown so much that now they have become one big metropolis. The city and district of Hyderabad are coterminous. Hyderabad district is entirely contained within the Ranga Reddy district of Telangana. Many of the suburbs of Hyderabad were recently merged into the city, now called Greater Hyderabad. </p>
+      </div>
+      <div class=" col-md-4 hvr-grow-shadow" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+         <img src="images/hydrabad.jpg" class="img-rounded" style="width:450px;height:250px;margin-top:15px">
+      </div>
+    </div>
+    <div class="row wow slideInLeft" style="margin-top:70px;text-align:center">
+      <div class=" col-md-4  hvr-grow-shadow" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+         <img src="images/banglore.jpg" class="img-rounded" style="width:450px;height:250px;margin-top:15px">
+      </div>
+      <div class="col-md-7">
+        <h2 style="text-align:left;font-size:50px">Bangalore</h2>
+        <p style="text-align:justify;font-size:20px">Bangalore, also known as Bengaluru (Kannada) is the capital of the Indian State of Karnataka. Bangalore is nicknamed the Garden City and was once called a Pensioner's Paradise. Located on the Deccan Plateau in the south-eastern part of Karnataka, Bangalore is India's third most populous city.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class=" container-fluid"  style="background-color:#323232;padding-bottom:100px">
+      <div class="row" style="margin-top:70px;text-align:center;">
+          <h2 class="wow fadeInDown" style="text-align:center;margin-bottom:40px;font-size:40px" >Why book with us?</h2>
+          <hr>
+          <div class="col-md-offset-4 col-md-2 wow fadeInLeft hvr-grow-shadow" style="margin:50px;margin-left:250px">
+            <img src="images/ind.png" style="width:150px;height:150px;padding-top:10px">
+            <h4>Trusted by over 8L+ happy travellers</h4>
+            <p>Book with one of most trusted travel portals in India</p>
+          </div>
+          <div class=" col-md-2  wow fadeInLeft hvr-grow-shadow" style="animation-delay:0.2s;margin:50px;margin:50px;">
+            <img src="images/pricetag.png" data-wow-delay="0.2s" style="width:150px;height:150px;padding-top:10px">
+            <h4>Lowest Price Guaranteed</h4>
+            <p>We guarantee you always get the lowest price when you reserve a room</p>
+          </div>
+          <div class=" col-md-2  wow fadeInLeft hvr-grow-shadow" style="animation-delay:0.3s;margin:50px;">
+            <img src="images/customer.png" data-wow-delay="0.3s" style="width:150px;height:150px;padding-top:10px;">
+            <h4>24x7 Customer Support</h4>
+            <p>Round the clock support for all your hotel needs</p>
+        </div>
+      </div>
+  </div>
+<!--footer-->
+  <footer style="background-color:black;margin-bottom:0px;color:white">
+    <div class="row wow fadeInUp">
+      <div class="col-md-3 col-md-offset-1">
+        <h3><b>Sample text</b></h3>
+        <p>Lorem ipsum dolor sit amet, ut expetenda evertitur nam, et sit ridens mandamus. Vide porro indoctum cu qui, an brute evertitur interesset eos.</p>
+      </div>
+      <div class="col-md-3 col-md-offset-1" id="proj">
+        <h3><b>Follow us on</b></h3>
+        <ul style="list-style-type:none;text-align:left">
+			     <li><a href="#"><i class="fa fa-facebook-square"  style="font-size:20px"></i></a> Facebook</li>
+			     <li><a href="#"><i class="fa fa-twitter-square" style="font-size:20px" ></i></a> Twitter</li>
+			     <li><a href="#"><i class="fa fa-linkedin-square" style="font-size:20px" ></i></a> Linkedin</li>
+			     <li><span><a href="mailto:#" style="text-decoration:none"><i class="fa fa-envelope"  style="font-size:20px;"></i></a></span> Email</li>
+        </ul>
+      </div>
+        <div class="col-md-3">
+          <h3><b>Contact info</b></h3>
+          <p><i class="fa fa-home" style="font-size:20px" aria-hidden="true"></i> rBUSt<br> VIT Vellore,<br> Katpadi, 600048<br>
+            <i class="fa fa-mobile" style="font-size:20px"  aria-hidden="true"></i> 9876543210
+          </p>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>

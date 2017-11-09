@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--animation stylesheets-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!--datepicker js-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+    </script>
+    <!--datepicker stylesheets-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+
     <style media="screen">
     body, html {
         height: 100%;
     }
 
     .bg {
-        background-image: url("natureroad.jpg");
+        background-image: url("images/busyoad.jpeg");
         height: 100%;/
         background-position: center;
         background-repeat: no-repeat;
@@ -23,17 +42,25 @@
       height:100%;
       background:rgba(0,0,0,0.65);
     }
+    .navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+  .navbar li { color: #000 }
     </style>
 </head>
-<body>
+<body style="background-color:black">
   <!--Navbar begins-->
-    <div class="row" style="width:100;height:50px;margin:0px">
-      <nav class="navbar navbar-inverse">
+    <div class="row" style="width:100vw;margin:0px">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
           <ul class="nav navbar-nav">
-            <li><a class="navbar-brand" href="Main_page.html"><img src="logo1.png" alt="BusT logo"  style="width:64px;height:60px; "></a></li>
+            <li><a class="navbar-brand" href="Main_page.html"><img src="images/logo1.png" alt="BusT logo"  style="width:64px;height:60px; "></a></li>
             <li><a style="padding-right:30px;padding-left:30px;" href="Main_page.html">Home</a></li>
             <li><a style="padding-right:30px;padding-left:30px;" href="#proj">About</a></li>
+            <li><a style="padding-right:30px;padding-left:30px;" href="#">Book Ticket</a></li>
+            <li><a style="padding-right:30px;padding-left:30px;" href="hotel.html">Hotels</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="Signup.html" style="padding-right:30px;padding-left:30px;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -43,41 +70,41 @@
       </nav>
     </div>
   <div class="bg">
-    <div class="overlay"><h1 style="z-index:3;text-align:center;padding-top:23%;color:white;"><b>Welcome to roBUSt</b></h1></div>
+    <div class="overlay"><h1 class="wow fadeInDown" style="z-index:3;text-align:center;padding-top:23%;color:white;"><b>Welcome to roBUSt</b></h1></div>
   </div>
-  <div class="container-fluid"  style="background-color:#F1F1F1;padding-bottom:60px">
-    <div class="row" style="margin-top:70px;text-align:center">
-      <div class="col-md-offset-4 col-md-4" style="background-color:white;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-         <img src="travel-insurance-bag.jpg" class="img-rounded" style="width:100%;margin-top:15px">
+  <div class="container-fluid"  style="background-color:#191919;padding-bottom:60px">
+    <div class="row wow slideInLeft" style="margin-top:70px;text-align:center">
+      <div class="col-md-offset-4 col-md-4  hvr-grow-shadow" style="background-color:white;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+         <img src="images/travel-insurance-bag.jpg" class="img-rounded" style="width:100vw ;margin-top:15px">
          <h4><b>ONLINE BUS BOOKING PLATFORM</b></h4>
          <p>An online ticket booking website for Bus travels. This website is made using <i>Django</i>, <i>Bootstrap</i>, <i>CSS</i> and <i>HTML</i></p>
       </div>
     </div>
   </div>
-  <div class=" container-fluid"  style="background-color:white;" id="proj">
-      <div class="row" style="margin-top:70px;text-align:center">
-        <h2 style="text-align:center;margin-bottom:40px" ><b>Project members</b></h2>
+  <div class=" container-fluid"  style="background-color:#323232;padding-bottom:100px" id="proj">
+      <div class="row" style="margin-top:70px;text-align:center;">
+        <h2 class="wow fadeInDown" style="text-align:center;margin-bottom:40px;color:white" ><b>Project members</b></h2>
         <hr>
-        <div class="col-md-offset-1 col-md-2" style="background-color:#F1F1F1;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-          <img src="yagi.jpg" class="img-circle" style="width:50%;height:50%;padding-top:10px">
+        <div class="col-md-offset-2 col-md-2 wow fadeInLeft hvr-grow-shadow" style="background-color:#F1F1F1;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin:50px;margin-left:100px">
+          <img src="images/yagi.jpg" class="img-circle" style="width:50%;height:50%;padding-top:10px">
           <h3>Yagneswar</h3>
         </div>
-        <div class="col-md-offset-1 col-md-2" style="background-color:#F1F1F1;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-          <img src="monish.jpg" class="img-circle" style="width:50%;height:50%;padding-top:10px">
+        <div class=" col-md-2  wow fadeInLeft hvr-grow-shadow" style="background-color:#F1F1F1;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);animation-delay:0.1s;margin:50px">
+          <img src="images/monish.jpg" data-wow-delay="0.1s" class="img-circle" style="width:50%;height:50%;padding-top:10px">
           <h3>Monish</h3>
         </div>
-        <div class="col-md-offset-1 col-md-2" style="background-color:#F1F1F1;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-          <img src="roshan.jpg" class="img-circle" style="width:50%;height:50%;padding-top:10px">
+        <div class=" col-md-2  wow fadeInLeft hvr-grow-shadow" style="background-color:#F1F1F1;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);animation-delay:0.2s;margin:50px;margin:50px;">
+          <img src="images/roshan.jpg" data-wow-delay="0.2s" class="img-circle" style="width:50%;height:50%;padding-top:10px">
           <h3>Roshan</h3>
         </div>
-        <div class="col-md-offset-1 col-md-2" style="background-color:#F1F1F1;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-          <img src="yagi.jpg" class="img-circle" style="width:50%;height:50%;padding-top:10px">
+        <div class=" col-md-2  wow fadeInLeft hvr-grow-shadow" style="background-color:#F1F1F1;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);animation-delay:0.3s;margin:50px;">
+          <img src="images/yagi.jpg" data-wow-delay="0.3s" class="img-circle" style="width:50%;height:50%;padding-top:10px">
           <h3>Abhishek</h3>
         </div>
       </div>
   </div>
-  <footer style="background-color:#383838;margin-top:80px;margin-bottom:0px;color:white">
-    <div class="row">
+  <footer style="background-color:black;margin-bottom:0px;color:white">
+    <div class="row wow fadeInUp">
       <div class="col-md-3 col-md-offset-1">
         <h3><b>Sample text</b></h3>
         <p>Lorem ipsum dolor sit amet, ut expetenda evertitur nam, et sit ridens mandamus. Vide porro indoctum cu qui, an brute evertitur interesset eos.</p>
